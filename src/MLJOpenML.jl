@@ -1,8 +1,8 @@
 module MLJOpenML
 
-const OpenML = MLJOpenML
-export OpenML
+using OpenML
+import OpenML: list_tags, list_datasets, describe_dataset, load
 
-include("openml.jl")
+export OpenML
 
 end # module
